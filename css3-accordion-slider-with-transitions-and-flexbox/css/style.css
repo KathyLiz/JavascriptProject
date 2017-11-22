@@ -318,3 +318,19 @@ body {
   opacity: 1;
   visibility: visible;
 }
+nav{
+	font-size: 0.8em;
+	color: black;
+	text-align: left;
+	padding-top: 0.5em;
+}
+
+nav{
+	font-size: 1em;
+	color: blue ;
+	text-align: left;
+	padding-top: .5em;
+}
+ul,li{
+	display: inline;
+}
