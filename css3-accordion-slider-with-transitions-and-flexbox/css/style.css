@@ -318,19 +318,31 @@ body {
   opacity: 1;
   visibility: visible;
 }
-nav{
-	font-size: 0.8em;
-	color: black;
-	text-align: left;
-	padding-top: 0.5em;
+
+
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
 
-nav{
-	font-size: 1em;
-	color: blue ;
-	text-align: left;
-	padding-top: .5em;
+li {
+    float: left;
 }
-ul,li{
-	display: inline;
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
 }
