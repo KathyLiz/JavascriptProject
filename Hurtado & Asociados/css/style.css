@@ -208,6 +208,13 @@ li a:hover {
   opacity: 1;
   visibility: visible;
 }
+
+section {
+  width: 1100px;
+  margin: 50px auto 0;
+  text-align: justify;
+  font-size: 20px;
+}
 .footer {
   width: 1100px;
   margin: 50px auto 0;
@@ -217,4 +224,5 @@ li a:hover {
   color: white;
   padding: 8px 8px;
 }
+
 
