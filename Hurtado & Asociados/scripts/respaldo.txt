@@ -30,6 +30,7 @@
     queryInput = document.getElementById("q");
     resultDiv = document.getElementById("result");
     queryInput.addEventListener("keydown", queryInputKeyDown);
+	document.getElementById("placeholder").style.display = "none";
     document.getElementById("main-wrapper").style.display = "block";
 	//Se inicializan las peticiones inicializa la variable de token de acceso
     window.init(accessTokenInput);
@@ -70,7 +71,7 @@
       })
       .catch(function(err) {
       //  setResponseJSON(err);
-	  //Se grafica el error con el mensaje
+	  //Se grafica el error
         setResponseOnNode("Something goes wrong", responseNode);
       });
   }
@@ -82,7 +83,7 @@
     resultDiv.appendChild(node);
   }
 	
-   //Función que crea el espacio para poner la respuesta y grafica puntos mientras recibe la respuesta de la API
+   //Función para graficar las respuesta de la API al usuario 
   function createResponseNode() {
     var node = document.createElement('div');
     node.className = "clearfix right-align right card-panel blue-text text-darken-2 hoverable";
@@ -91,7 +92,6 @@
     return node;
   }
 
-  //Pone la respuesta de la API en el div que graficó la función anterior
   function setResponseOnNode(response, node) {
     node.innerHTML = response ? response : "[empty response]";
     node.setAttribute('data-actual-response', response);
@@ -101,7 +101,7 @@
     var node = document.getElementById("jsonResponse");
     node.innerHTML = JSON.stringify(response, null, 2);
   }*/
-	//Envía la petición desde el archivo demoFunctions
+
   function sendRequest() {
 
   }

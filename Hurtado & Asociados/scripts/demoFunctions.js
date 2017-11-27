@@ -20,12 +20,15 @@
  * All this stuff is moved into global namespace and separate files just to be
  * MAXIMUM clear and easy to understand
  */
-
+//Se instancia un cliente de peticiones
 var client;
+//La función init recibe el token desde el script anterior
 window.init = function(token) {
+	//Se inicializa un objeto como tipo de la API a la que se le va ha hacer la consulta
   client = new ApiAi.ApiAiClient({accessToken: token});
 };
 
+//Se realiza el request a la API y se envía a la página
 function sendText(text) {
   return client.textRequest(text);
 }
