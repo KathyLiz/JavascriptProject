@@ -225,4 +225,15 @@ section {
   padding: 8px 8px;
 }
 
+#placeholder {
+            text-align: center;
+            margin-top: 1.5em;
+        }
+#main-wrapper {
+            display: none;
+        }
+.clearfix {
+            clear: both;
+        }
+
 

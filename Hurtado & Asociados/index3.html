@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="es" >
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hurtado & Asociados</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script src="target/ApiAi.js"></script>
+    <script src="scripts/demoFunctions.js"></script>
+  <script src="scripts/script.js"></script>
 </head>
 <body>
 <header>
@@ -15,7 +22,7 @@
   <li><a href="#Nosotros">Nosotros</a></li>
   <li><a href="#Proyectos">Proyectos</a></li>
   <li><a href="#Tips">Tips</a></li>
-  <li><a href="#Contactos">Contáctanos</a></li>
+  <li><a href="#chat">Contáctanos</a></li>
 </ul>
 	</nav>
 </header>
@@ -27,7 +34,7 @@
       <h2>Bienvenido</h2>
       <div class="flexbox-slider flexbox-slider-1">
         <div class="flexbox-slide">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/694606/eff-1.jpg" alt="Slide Image">
+          <img src="img/DSC03295.JPG" alt="Slide Image">
           <div class="text-block">
             <h3>Acabados de Calidad</h3>
             <div class="text">
@@ -36,18 +43,18 @@
           </div>
         </div>
         <div class="flexbox-slide">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/694606/eff-2.jpg" alt="Slide Image">
+          <img src="img/DSC03297.JPG" alt="Slide Image">
           <div class="text-block">
-            <h3>Slide #2 is here</h3>
+            <h3>El Portal del Chamisal</h3>
             <div class="text">
               <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren</p>
             </div>
           </div>
         </div>
         <div class="flexbox-slide">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/694606/eff-3.jpg" alt="Slide Image">
+          <img src="img/DSC03310.JPG" alt="Slide Image">
           <div class="text-block">
-            <h3>Slide #3 is here</h3>
+            <h3>Casales Victoria</h3>
             <div class="text">
               <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren</p>
             </div>
@@ -89,10 +96,28 @@
   <section id = "Tips">
 	<h1>TIPS</h1>
 	
-  </section
+  </section>
+  
+  <div id="chat">
+	<div id="main-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col s5">
+                <div class="input-field">
+                    <input placeholder="¡Hola! Pregúntame algo..." id="q" type="text" >
+                </div>
+                <div id="result">
+                </div>
+            </div>
+            <div class="col s2"></div>
+        </div>
+    </div>
+</div>
+  </div>
 </div>
 <footer class="footer">
 	<p>Copyright © 2017 Hurtado & Asociados. Todos los derechos reservados.</P>
 </footer>
+<script defer src="scripts/layout.js"></script>
 </body>
 </html>
