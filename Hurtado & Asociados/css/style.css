@@ -560,3 +560,43 @@ p {
         }
 
 
+#addClass{
+	font-size:20px;
+	
+}
+
+.container nav ul li a{font-size:20px;}
+
+#contenido section article img{width:80%;height:200px;}  
+#Proyectos article {display:inline-block; width:315px; height:280px;}
+#contenido section:hover article{opacity:.6;}
+#contenido section article:hover{opacity:1;}
+
+
+#contenido section article a {font:17px Verdana; text-decoration:none;color:#blue; padding: 10px 60px 10px 60px;}
+
+
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+body { margin: 0; } 
+div#slider { overflow: hidden; }
+div#slider figure img { width: 20%; float: left; }
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite; 
+}
